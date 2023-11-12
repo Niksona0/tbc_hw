@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>TBC MAIN</title>
+</head>
+<body>
+    <div class="blur-bg"></div>
+
+    <header>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <span class="tp" id="main"></span>
+    <main class="main">
+        <h1>მოგესალმებით საიტზე</h1>
+    </main>
+
+
+    <span class="tp" id="photos"></span>
+    <main class="photos">
+        <h1>კეთების პროცესშია ...</h1>
+    </main>
+
+
+    <span class="tp" id="news"></span>
+    <main class="news">
+        <h1>კეთების პროცესშია ...</h1>
+    </main>
+
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navList = document.querySelector('ul');
+    
+        burgerMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
